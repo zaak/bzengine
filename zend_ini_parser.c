@@ -68,13 +68,13 @@
 
 
 /* Copy the first part of user declarations.  */
-#line 1 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:339  */
+#line 1 "./zend_ini_parser.y" /* yacc.c:339  */
 
 /*
    +----------------------------------------------------------------------+
    | Zend Engine                                                          |
    +----------------------------------------------------------------------+
-   | Copyright (c) 1998-2015 Zend Technologies Ltd. (http://www.zend.com) |
+   | Copyright (c) 1998-2016 Zend Technologies Ltd. (http://www.zend.com) |
    +----------------------------------------------------------------------+
    | This source file is subject to version 2.00 of the Zend license,     |
    | that is bundled with this package in the file LICENSE, and is        |
@@ -330,7 +330,7 @@ ZEND_API int zend_parse_ini_string(char *str, zend_bool unbuffered_errors, int s
 /* }}} */
 
 
-#line 334 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:339  */
+#line 334 "zend_ini_parser.c" /* yacc.c:339  */
 
 # ifndef YY_NULLPTR
 #  if defined __cplusplus && 201103L <= __cplusplus
@@ -350,8 +350,8 @@ ZEND_API int zend_parse_ini_string(char *str, zend_bool unbuffered_errors, int s
 
 /* In a future release of Bison, this section will be replaced
    by #include "zend_ini_parser.h".  */
-#ifndef YY_INI_MEDIA_ZAAK_C8E4533F_1124_4EF8_9AE0_BF67B87532EE_PROJECTS_PHP_SRC_ZEND_ZEND_INI_PARSER_H_INCLUDED
-# define YY_INI_MEDIA_ZAAK_C8E4533F_1124_4EF8_9AE0_BF67B87532EE_PROJECTS_PHP_SRC_ZEND_ZEND_INI_PARSER_H_INCLUDED
+#ifndef YY_INI_ZEND_INI_PARSER_H_INCLUDED
+# define YY_INI_ZEND_INI_PARSER_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -410,11 +410,11 @@ typedef int YYSTYPE;
 
 int ini_parse (void);
 
-#endif /* !YY_INI_MEDIA_ZAAK_C8E4533F_1124_4EF8_9AE0_BF67B87532EE_PROJECTS_PHP_SRC_ZEND_ZEND_INI_PARSER_H_INCLUDED  */
+#endif /* !YY_INI_ZEND_INI_PARSER_H_INCLUDED  */
 
 /* Copy the second part of user declarations.  */
 
-#line 418 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:358  */
+#line 418 "zend_ini_parser.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -1557,7 +1557,7 @@ yyreduce:
   switch (yyn)
     {
         case 4:
-#line 293 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 293 "./zend_ini_parser.y" /* yacc.c:1646  */
     {
 #if DEBUG_CFG_PARSER
 			printf("SECTION: [%s]\n", Z_STRVAL((yyvsp[-1])));
@@ -1565,11 +1565,11 @@ yyreduce:
 			ZEND_INI_PARSER_CB(&(yyvsp[-1]), NULL, NULL, ZEND_INI_PARSER_SECTION, ZEND_INI_PARSER_ARG);
 			zend_string_release(Z_STR((yyvsp[-1])));
 		}
-#line 1569 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1569 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 5:
-#line 300 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 300 "./zend_ini_parser.y" /* yacc.c:1646  */
     {
 #if DEBUG_CFG_PARSER
 			printf("NORMAL: '%s' = '%s'\n", Z_STRVAL((yyvsp[-2])), Z_STRVAL((yyvsp[0])));
@@ -1578,11 +1578,11 @@ yyreduce:
 			zend_string_release(Z_STR((yyvsp[-2])));
 			zval_ptr_dtor(&(yyvsp[0]));
 		}
-#line 1582 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1582 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 6:
-#line 308 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 308 "./zend_ini_parser.y" /* yacc.c:1646  */
     {
 #if DEBUG_CFG_PARSER
 			printf("OFFSET: '%s'[%s] = '%s'\n", Z_STRVAL((yyvsp[-4])), Z_STRVAL((yyvsp[-3])), Z_STRVAL((yyvsp[0])));
@@ -1596,269 +1596,269 @@ yyreduce:
 			}
 			zval_ptr_dtor(&(yyvsp[0]));
 		}
-#line 1600 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1600 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 7:
-#line 321 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 321 "./zend_ini_parser.y" /* yacc.c:1646  */
     { ZEND_INI_PARSER_CB(&(yyvsp[0]), NULL, NULL, ZEND_INI_PARSER_ENTRY, ZEND_INI_PARSER_ARG); zend_string_release(Z_STR((yyvsp[0]))); }
-#line 1606 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1606 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 9:
-#line 326 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 326 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); }
-#line 1612 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1612 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 10:
-#line 327 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 327 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_init_string(&(yyval)); }
-#line 1618 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1618 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 11:
-#line 331 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 331 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); }
-#line 1624 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1624 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 12:
-#line 332 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 332 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); }
-#line 1630 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1630 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 13:
-#line 333 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 333 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); }
-#line 1636 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1636 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 14:
-#line 334 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 334 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); }
-#line 1642 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1642 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 15:
-#line 335 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 335 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_init_string(&(yyval)); }
-#line 1648 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1648 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 16:
-#line 339 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 339 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); }
-#line 1654 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1654 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 17:
-#line 340 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 340 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_init_string(&(yyval)); }
-#line 1660 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1660 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 18:
-#line 344 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 344 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_add_string(&(yyval), &(yyvsp[-1]), &(yyvsp[0])); zend_string_free(Z_STR((yyvsp[0]))); }
-#line 1666 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1666 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 19:
-#line 345 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 345 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_add_string(&(yyval), &(yyvsp[-1]), &(yyvsp[0])); zend_string_free(Z_STR((yyvsp[0]))); }
-#line 1672 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1672 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 20:
-#line 346 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 346 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_init_string(&(yyval)); }
-#line 1678 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1678 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 21:
-#line 350 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 350 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); }
-#line 1684 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1684 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 22:
-#line 351 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 351 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); }
-#line 1690 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1690 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 23:
-#line 352 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 352 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[-1]); }
-#line 1696 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1696 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 24:
-#line 353 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 353 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_add_string(&(yyval), &(yyvsp[-1]), &(yyvsp[0])); zend_string_free(Z_STR((yyvsp[0]))); }
-#line 1702 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1702 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 25:
-#line 354 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 354 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_add_string(&(yyval), &(yyvsp[-1]), &(yyvsp[0])); zend_string_free(Z_STR((yyvsp[0]))); }
-#line 1708 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1708 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 26:
-#line 355 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 355 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_add_string(&(yyval), &(yyvsp[-3]), &(yyvsp[-1])); zend_string_free(Z_STR((yyvsp[-1]))); }
-#line 1714 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1714 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 27:
-#line 359 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 359 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); }
-#line 1720 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1720 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 28:
-#line 360 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 360 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); }
-#line 1726 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1726 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 29:
-#line 361 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 361 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[-1]); }
-#line 1732 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1732 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 30:
-#line 362 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 362 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_add_string(&(yyval), &(yyvsp[-1]), &(yyvsp[0])); zend_string_free(Z_STR((yyvsp[0]))); }
-#line 1738 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1738 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 31:
-#line 363 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 363 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_add_string(&(yyval), &(yyvsp[-1]), &(yyvsp[0])); zend_string_free(Z_STR((yyvsp[0]))); }
-#line 1744 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1744 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 32:
-#line 364 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 364 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_add_string(&(yyval), &(yyvsp[-3]), &(yyvsp[-1])); zend_string_free(Z_STR((yyvsp[-1]))); }
-#line 1750 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1750 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 33:
-#line 368 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 368 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); }
-#line 1756 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1756 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 34:
-#line 369 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 369 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_do_op('|', &(yyval), &(yyvsp[-2]), &(yyvsp[0])); }
-#line 1762 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1762 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 35:
-#line 370 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 370 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_do_op('&', &(yyval), &(yyvsp[-2]), &(yyvsp[0])); }
-#line 1768 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1768 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 36:
-#line 371 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 371 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_do_op('^', &(yyval), &(yyvsp[-2]), &(yyvsp[0])); }
-#line 1774 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1774 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 37:
-#line 372 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 372 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_do_op('~', &(yyval), &(yyvsp[0]), NULL); }
-#line 1780 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1780 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 38:
-#line 373 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 373 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_do_op('!', &(yyval), &(yyvsp[0]), NULL); }
-#line 1786 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1786 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 39:
-#line 374 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 374 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[-1]); }
-#line 1792 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1792 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 40:
-#line 378 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 378 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_get_var(&(yyval), &(yyvsp[-1])); zend_string_free(Z_STR((yyvsp[-1]))); }
-#line 1798 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1798 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 41:
-#line 382 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 382 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); }
-#line 1804 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1804 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 42:
-#line 383 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 383 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); /*printf("TC_RAW: '%s'\n", Z_STRVAL($1));*/ }
-#line 1810 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1810 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 43:
-#line 384 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 384 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); /*printf("TC_NUMBER: '%s'\n", Z_STRVAL($1));*/ }
-#line 1816 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1816 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 44:
-#line 385 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 385 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); /*printf("TC_STRING: '%s'\n", Z_STRVAL($1));*/ }
-#line 1822 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1822 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 45:
-#line 386 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 386 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); /*printf("TC_WHITESPACE: '%s'\n", Z_STRVAL($1));*/ }
-#line 1828 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1828 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 46:
-#line 390 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 390 "./zend_ini_parser.y" /* yacc.c:1646  */
     { zend_ini_get_constant(&(yyval), &(yyvsp[0])); }
-#line 1834 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1834 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 47:
-#line 391 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 391 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); /*printf("TC_RAW: '%s'\n", Z_STRVAL($1));*/ }
-#line 1840 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1840 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 48:
-#line 392 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 392 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); /*printf("TC_NUMBER: '%s'\n", Z_STRVAL($1));*/ }
-#line 1846 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1846 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 49:
-#line 393 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 393 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); /*printf("TC_STRING: '%s'\n", Z_STRVAL($1));*/ }
-#line 1852 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1852 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
   case 50:
-#line 394 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.y" /* yacc.c:1646  */
+#line 394 "./zend_ini_parser.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]); /*printf("TC_WHITESPACE: '%s'\n", Z_STRVAL($1));*/ }
-#line 1858 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1858 "zend_ini_parser.c" /* yacc.c:1646  */
     break;
 
 
-#line 1862 "/media/zaak/c8e4533f-1124-4ef8-9ae0-bf67b87532ee/projects/php-src/Zend/zend_ini_parser.c" /* yacc.c:1646  */
+#line 1862 "zend_ini_parser.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
