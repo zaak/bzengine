@@ -43,6 +43,9 @@
 # define ZEND_ENDIAN_LOHI_C_4(a, b, c, d)  a, b, c, d
 #endif
 
+
+typedef unsigned long ulong;
+typedef unsigned int uint;
 typedef unsigned char zend_bool;
 typedef unsigned char zend_uchar;
 
