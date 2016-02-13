@@ -25,7 +25,6 @@
 
 #include <stdio.h>
 
-#include "TSRM.h"
 #include "zend.h"
 
 #ifndef ZEND_MM_ALIGNMENT

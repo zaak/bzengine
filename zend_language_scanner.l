@@ -48,7 +48,6 @@
 #include "zend_strtod.h"
 #include "zend_exceptions.h"
 #include "zend_virtual_cwd.h"
-#include "tsrm_config_common.h"
 
 #define YYCTYPE   unsigned char
 #define YYFILL(n) { if ((YYCURSOR + n) >= (YYLIMIT + ZEND_MMAP_AHEAD)) { return 0; } }

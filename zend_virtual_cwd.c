@@ -32,7 +32,6 @@
 
 #include "zend.h"
 #include "zend_virtual_cwd.h"
-#include "tsrm_strtok_r.h"
 
 #ifdef ZEND_WIN32
 #include <io.h>
@@ -63,8 +62,6 @@
 #endif
 
 #define VIRTUAL_CWD_DEBUG 0
-
-#include "TSRM.h"
 
 /* Only need mutex for popen() in Windows and NetWare because it doesn't chdir() on UNIX */
 #if (defined(ZEND_WIN32) || defined(NETWARE)) && defined(ZTS)

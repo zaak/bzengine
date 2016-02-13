@@ -89,6 +89,16 @@ ZEND_API ZEND_COLD ZEND_NORETURN void zend_error_noreturn(int type, const char *
 # define zend_error_noreturn zend_error
 #endif
 
+#ifndef MAXPATHLEN
+# ifdef PATH_MAX
+#  define MAXPATHLEN PATH_MAX
+# elif defined(MAX_PATH)
+#  define MAXPATHLEN MAX_PATH
+# else
+#  define MAXPATHLEN 256
+# endif
+#endif
+
 /* overloaded elements data types */
 #define OE_IS_ARRAY					(1<<0)
 #define OE_IS_OBJECT				(1<<1)

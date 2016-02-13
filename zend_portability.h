@@ -49,8 +49,6 @@
 # define ZEND_PATHS_SEPARATOR		':'
 #endif
 
-#include "TSRM.h"
-
 #include <stdio.h>
 #include <assert.h>
 
