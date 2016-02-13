@@ -1,6 +1,0 @@
-
----- EXPECTED OUTPUT
-string(3) "bar"
----- ACTUAL OUTPUT
-bool(true)
----- FAILED
