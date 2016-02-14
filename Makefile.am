@@ -19,7 +19,7 @@ libZend_la_SOURCES=\
 	zend_iterators.c zend_interfaces.c zend_exceptions.c \
 	zend_strtod.c zend_closures.c zend_float.c zend_string.c zend_signal.c \
 	zend_generators.c zend_virtual_cwd.c zend_ast.c zend_smart_str.c zend_gc.c \
-	zend_multibyte.c zend_inheritance.c
+	zend_multibyte.c zend_inheritance.c snprintf.c spprintf.c
 
 libZend_la_CFLAGS = -fPIC
 libZend_la_LDFLAGS =
